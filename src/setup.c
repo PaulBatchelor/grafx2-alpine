@@ -168,14 +168,14 @@ char * Get_data_directory(const char * program_dir)
     {
       // If the program is not installed, find_path will fail. Try from local dir then.
       free(data_dir);
-      to_append = "share/grafx2/";
+      to_append = "../share/grafx2/";
     }
 
   #elif defined(WIN32)
     to_append = "..\\share\\grafx2\\";
   #else
     // All other targets, program is in a "bin" subdirectory
-    to_append = "share/grafx2/";
+    to_append = "../share/grafx2/";
   #endif
 
   return Filepath_append_to_dir(program_dir, to_append);
