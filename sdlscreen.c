@@ -32,7 +32,6 @@
 #endif
 // There is no WM on the GP2X...
 #ifndef __GP2X__
-    #undef SDL_VIDEO_DRIVER_DIRECTFB
     #include <SDL_syswm.h>
 #endif
 

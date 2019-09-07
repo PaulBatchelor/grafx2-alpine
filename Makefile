@@ -4,6 +4,7 @@ CFLAGS += -DUSE_SDL2
 #CFLAGS += -DUSE_X11
 CFLAGS += -g
 CFLAGS += -D_GNU_SOURCE
+CFLAGS += -I/usr/include/directfb
 
 LIBS += -lSDL2 -lX11 -ltiff -lz -lSDL2_ttf
 LIBS += -lpng -lSDL2_image

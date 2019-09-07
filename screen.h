@@ -35,7 +35,6 @@
 #if defined(USE_SDL) || defined(USE_SDL2)
 #include <SDL.h>
 #if defined(SDL_VIDEO_DRIVER_X11)
-#undef SDL_VIDEO_DRIVER_DIRECTFB
 #include <SDL_syswm.h> // for Display, Window
 #endif
 #endif
