@@ -87,11 +87,13 @@ install:
 	mkdir -p /usr/local/share/grafx2
 	mkdir -p /usr/local/share/grafx2/fonts
 	mkdir -p /usr/local/share/grafx2/skins
+	mkdir -p /usr/local/bin
 	cp ../share/grafx2/gfx2def.ini /usr/local/share/grafx2/
 	cp ../share/grafx2/gfx2.gif /usr/local/share/grafx2/
 	cp ../share/grafx2/gfx2.png /usr/local/share/grafx2/
 	cp ../share/grafx2/fonts/* /usr/local/share/grafx2/fonts/
 	cp $(SKIN_FILES) /usr/local/share/grafx2/skins/
+	cp grafx2 /usr/local/bin
 
 clean:
 	@echo "GrafX2 Cleanup"
